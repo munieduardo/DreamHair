@@ -1,0 +1,457 @@
+/* 1rem = 10px */  
+/*Fuentes:
+font-family: 'Bangers', cursive;
+font-family: 'Lemon', cursive;
+font-family: 'Paytone One', sans-serif;
+font-family: 'Roboto', sans-serif; */
+html { 
+    font-size: 62.5%;}    
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+                /* INDEX */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10rem 0rem 200rem 30rem;
+    grid-template-areas:
+    "nav nav nav"
+    "h1 h1 h1"
+    "section section section"
+    "footer footer footer";
+    grid-gap: 5rem;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.portada{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 15rem;
+}
+
+#nav-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background: rgb(252, 32, 179);
+    padding: 1rem 0rem;
+    position: sticky;
+    top: 0;
+    font-size: 1.5rem;
+    z-index: 1;
+    grid-area: nav;
+}
+
+.lista-flex{
+    font-family: 'Paytone One', sans-serif;
+    display: flex;
+    font-size: 2.2rem;
+    gap: 2rem;
+}
+
+.lista-flex li a{
+    color: white;
+    text-decoration: none;
+    width: 10rem;
+}
+
+.img-nav {
+    width: 30rem;
+    height: 7.5rem;
+}
+
+body {
+    background: #FFF2E7;
+}
+
+.titulo {
+    font-size: 5rem;
+    font-family: 'Paytone One', sans-serif;
+    text-align: center;
+    margin-bottom: 3rem;
+    grid-area: h1;
+}
+
+section{
+    grid-area: section;
+}
+
+.info{
+    background-color: rgb(249, 249, 249);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50rem;
+    margin-bottom: 10rem;
+}
+
+.info2{
+    background-color: rgb(249, 249, 249);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    height: 50rem;
+    margin-bottom: 10rem;
+}
+
+.info_parrafo{
+    max-width: 65%;
+    max-height: 100%;
+    font-size: 2.5rem;
+    text-align: justify;
+    text-align-last: center ;
+    font-family: 'Roboto', sans-serif;
+    line-height: 4.5rem;
+}
+
+.titulo2{
+    font-weight: bolder;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    max-width: 100%;
+    text-align: center;
+}
+
+.info_parrafo h2{
+    font-weight: 2rem;
+}
+
+.foto{
+    max-height: 100%;
+}
+
+.button-asesoramiento{
+    width: 100%;
+    padding: 2rem;
+    margin-top: 2rem;
+    background-color: rgb(252, 32, 179);
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+    border-style: none;
+}
+
+.button-asesoramiento:hover{
+    background-color: rgb(255, 146, 219);
+    cursor: pointer;
+}
+
+                /*FOOTER*/
+
+footer{
+    grid-area: footer;
+    background-color: rgb(252, 32, 179);
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    height: 25rem;
+}
+
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-info li{
+    margin-top: 1rem;
+}
+
+.logo-footer{
+    width: 35rem;
+}
+
+.lista-footer{
+    font-size: 2rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.footer-redes{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    width: 25rem;
+    margin-top: 1rem;
+}
+
+.logo-redes img{
+    width: 4rem;
+}
+
+.footer-legal{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 20rem;
+}
+.footer-legal a{
+    width: 22rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.footer-legal h2{
+    margin-top: 3rem;
+    font-size: 3.5rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.parrafo-footer{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+                /*PAGINA CONTACTO*/
+
+.sect-contact{
+    justify-content: center;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+}
+
+
+                /*PAGINA CATALOGO*/
+
+.flex_marcas{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+}
+.marcas{
+    padding: 3rem 10rem 1rem 10rem;
+    margin-bottom: 5rem;
+    border: 20rem;
+    cursor: pointer;
+}
+
+.marcas img{
+    width: 20rem;
+}
+
+                /*PAGINA PRODUCTOS*/
+
+.titulo-productos{
+    padding-bottom: 5rem;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: white;
+    width: 38rem;
+    height: 55rem;
+    margin-bottom: 10rem;
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 5%;
+    border-right: solid 0.5rem rgb(159, 159, 159);
+    border-bottom: solid 0.5rem rgb(159, 159, 159);
+}
+.card_parrafo{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    width: 30rem;
+    height: 25rem;
+}
+
+.card_parrafo--titulo{
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 1.5rem;
+    font-family: 'Roboto', sans-serif;   
+}
+
+.card_imagen{
+    width: 30rem;
+}
+
+.logo-apto{
+    position: absolute;
+    width: 10rem;
+    top: 20rem;
+    left: 30rem;
+}
+.card_parrafo--precio{
+    font-size: 2rem;
+    display: block;
+}
+
+.card_buttom{
+    display: block;
+}
+
+#card_abajo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20rem;
+    margin-bottom: 2rem;
+}
+
+                /*MEDIA QUERIES*/
+@media screen and (max-width: 1300px) {
+
+.info_parrafo{
+    max-width: 60%;
+    font-size: 2rem;
+    line-height: 4rem;
+    margin: 0rem 1.5rem;
+}
+}
+
+@media screen and (max-width: 1024px) {
+.grid-container{
+    grid-template-rows: 20rem 0rem 260rem 30rem;
+}
+
+#nav-flex{
+    flex-direction: column;
+    height: 20rem;
+}
+
+.img-nav{
+    width: 50rem;
+    height: 10rem;
+}
+
+.lista-flex{
+    gap: 4rem;
+}
+
+.info_parrafo {
+    max-width: 71%;
+    font-size: 2rem;
+    line-height: 4rem;
+    margin: 0rem 1.5rem;
+}
+
+.info{
+    flex-direction: row;
+    justify-content: center;
+}
+
+.info2{
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.titulo2{
+    font-size: 3rem;
+
+}
+
+@media screen and (max-width: 800px){
+
+.grid-container{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 45rem 0rem 450rem 100rem;
+    grid-template-areas:
+    "nav"
+    "h1"
+    "section"
+    "footer";
+}
+
+.titulo2{
+    font-size: 3rem;
+}
+
+.cabecera{
+    display: none;
+}
+
+.lista-flex{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-flex{
+    padding: 15rem 0rem;
+    position: relative;
+    z-index: 0;
+}
+
+.footer-container{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-info{
+    margin-top: 2rem;
+}
+
+.footer-legal{
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-legal a{
+    text-align: center;
+}
+
+.info{
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+}
+
+.info2{
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+}
+
+.info_parrafo{
+    text-align-last: center;
+    max-width: 90%;
+}
+.button-asesoramiento{
+    padding: 2rem 3rem;
+    width: none;
+    margin-bottom: 1rem;
+}
+}
+}
