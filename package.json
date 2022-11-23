@@ -1,11 +1,10 @@
 {
   "name": "dreamhair",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css":"node-sass --include-path scss scss/styles.scss css/styles.css",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
@@ -15,7 +14,8 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-  "url": "https://github.com/munieduardo/PreEntrega2-Raviolo/issues"
+    "url": "https://github.com/munieduardo/PreEntrega2-Raviolo/issues"
   },
-  "homepage": "https://github.com/munieduardo/PreEntrega2-Raviolo#readme"
+  "homepage": "https://github.com/munieduardo/PreEntrega2-Raviolo#readme",
+  "description": ""
 }
